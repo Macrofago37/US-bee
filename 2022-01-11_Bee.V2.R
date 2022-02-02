@@ -97,6 +97,8 @@ ggplot(data=Graph$Hexabin_tidy)+ geom_polygon(aes(long, lat, group=state, fill=m
         plot.subtitle = element_text(family = "Red Hat Text", size = 18, hjust = 0.5, colour = "#EBEBEC"),
         legend.text = element_text(family="Red Hat Text", colour="#EBEBEC"),
         legend.title = element_text(family="Red Hat Display", colour="#EBEBEC"))
+  
+ggsave("Bee.tiff", width=7, height=5, device="tiff")
 
 
 
